@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "441262431943",
+    "project_id": "fpoly-5c8f0",
+    "storage_bucket": "fpoly-5c8f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441262431943:android:91aaf9ed3d42629cd328e2",
+        "android_client_info": {
+          "package_name": "com.appolytechnic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441262431943-slhhh3etc3mtaem41fg1mvp7mlum9im1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLIM-ZBF8GXeEu7MeyAl94n2ds89ygIdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441262431943-slhhh3etc3mtaem41fg1mvp7mlum9im1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
