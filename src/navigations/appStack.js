@@ -1,5 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 import { AppRoute } from '../constants';
 import TinTucScreen from '../screens/TinTucScreen';
 import BangDiemScreen from '../screens/BangDiemScreen';
@@ -7,7 +8,7 @@ import LichHocScreen from '../screens/LichHocScreen';
 import ThongTinCaNhanScreen from '../screens/ThongTinCaNhanScreen';
 
 const Tab = createBottomTabNavigator();
-const HomeBottomTab = () => (
+const AppStack = () => (
     <Tab.Navigator initialRouteName={AppRoute.TIN_TUC}>
         <Tab.Screen name={AppRoute.TIN_TUC} component={TinTucScreen} />
         <Tab.Screen name={AppRoute.BANG_DIEM} component={BangDiemScreen} />
@@ -19,4 +20,4 @@ const HomeBottomTab = () => (
     </Tab.Navigator>
 );
 
-export default HomeBottomTab;
+export default AppStack;
