@@ -2,14 +2,21 @@ import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, Dimensions } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Divider } from 'react-native-paper';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import { useDispatch } from 'react-redux';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 import { AppRoute } from '../../constants';
 import { Colors } from '../../styles';
-
 import CustomSwiper from '../../components/CustomSwiper';
 import CustomButton from '../../components/CustomButton';
+import { googleSignIn } from '../../slices/userSlice';
 
 const WelcomeScreen = () => {
+    const dispatch = useDispatch();
     const navigation = useNavigation();
+
+    const onGoogleButtonPress = () => dispatch(googleSignIn());
 
     return (
         <SafeAreaView style={styles.container}>
@@ -29,11 +36,15 @@ const WelcomeScreen = () => {
                 <View style={styles.buttonSection}>
                     <CustomButton
                         title="Đăng nhập bằng tài khoản Google"
-                        icon="google"
+                        icon={({ color }) => (
+                            <Ionicons
+                                name="logo-google"
+                                size={24}
+                                color={color}
+                            />
+                        )}
                         color={Colors.PRIMARY}
-                        onPress={() =>
-                            navigation.navigate(AppRoute.STUDENT_LOGIN)
-                        }
+                        onPress={onGoogleButtonPress}
                     />
                 </View>
                 <Divider style={styles.divider} />
