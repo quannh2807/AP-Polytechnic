@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "441262431943-l7jhgej2484docp05oliqoafsj4q5u82.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appolytechnic",
+            "certificate_hash": "5b1cf3b246f5a490dca13a670f87bb4c2ed72205"
+          }
+        },
+        {
           "client_id": "441262431943-slhhh3etc3mtaem41fg1mvp7mlum9im1.apps.googleusercontent.com",
           "client_type": 3
         }
