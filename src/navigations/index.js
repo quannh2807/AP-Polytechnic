@@ -6,11 +6,11 @@ import AuthStack from '../navigations/authStack';
 import AppStack from '../navigations/appStack';
 
 const RootNavigation = () => {
-    const user = useSelector((state) => state.user);
+    const user = useSelector((state) => state.auth.user);
 
     return (
         <NavigationContainer>
-            {user.user ? <AppStack /> : <AuthStack />}
+            {user ? <AppStack /> : <AuthStack />}
         </NavigationContainer>
     );
 };

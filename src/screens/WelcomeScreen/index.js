@@ -4,13 +4,12 @@ import { useNavigation } from '@react-navigation/native';
 import { Divider } from 'react-native-paper';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useDispatch } from 'react-redux';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { AppRoute } from '../../constants';
 import { Colors } from '../../styles';
 import CustomSwiper from '../../components/CustomSwiper';
 import CustomButton from '../../components/CustomButton';
-import { googleSignIn } from '../../slices/userSlice';
+import { googleSignIn } from '../../slices/authSlice';
 
 const WelcomeScreen = () => {
     const dispatch = useDispatch();

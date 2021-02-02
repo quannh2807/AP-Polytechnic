@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native-paper';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { gooogleSignOut } from '../../slices/userSlice';
+import { gooogleSignOut } from '../../slices/authSlice';
 import { useDispatch } from 'react-redux';
 
 const TinTucScreen = () => {
