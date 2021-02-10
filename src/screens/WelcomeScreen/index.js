@@ -10,6 +10,7 @@ import { Colors } from '../../styles';
 import CustomSwiper from '../../components/CustomSwiper';
 import CustomButton from '../../components/CustomButton';
 import { googleSignIn } from '../../slices/authSlice';
+import CustomPicker from '../../components/CustomPicker';
 
 const WelcomeScreen = () => {
     const dispatch = useDispatch();
@@ -25,12 +26,7 @@ const WelcomeScreen = () => {
 
             <View style={styles.body}>
                 <View style={styles.buttonSection}>
-                    <CustomButton
-                        title="Chọn cơ sở đào tạo"
-                        onPress={() =>
-                            navigation.navigate(AppRoute.STUDENT_LOGIN)
-                        }
-                    />
+                    <CustomPicker />
                 </View>
                 <View style={styles.buttonSection}>
                     <CustomButton

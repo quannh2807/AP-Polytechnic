@@ -17,7 +17,7 @@ const CustomButtom = ({ onPress, title, icon, color }) => (
                 borderWidth: 2,
             },
         ]}
-        labelStyle={{ color: color ? color : Colors.BLACK }}
+        labelStyle={{ color: color ? color : Colors.BLACK, fontSize: 15 }}
         contentStyle={styles.content}
     >
         {title}
