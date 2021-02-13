@@ -2,7 +2,6 @@ export const API_URL = 'API_URL';
 
 export const AppRoute = {
     WELCOME: 'Welcome',
-    STUDENT_LOGIN: 'Student Login',
     PARENT_LOGIN: 'Parent Login',
 
     HOME: 'Home',
