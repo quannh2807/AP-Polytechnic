@@ -1,11 +1,21 @@
 import 'react-native-gesture-handler';
 import React, { useEffect } from 'react';
-import { Provider as PaperProvider } from 'react-native-paper';
-import { Provider } from 'react-redux';
 import store from './app/store';
+import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
+import { Provider } from 'react-redux';
 import { GoogleSignin } from '@react-native-community/google-signin';
 
+import { Colors } from './styles';
 import RootNavigation from './navigations';
+
+const theme = {
+    ...DefaultTheme,
+    roundness: 2,
+    colors: {
+        ...DefaultTheme.colors,
+        primary: Colors.BLACK,
+    },
+};
 
 const App = () => {
     useEffect(() => {
@@ -17,7 +27,7 @@ const App = () => {
 
     return (
         <Provider store={store}>
-            <PaperProvider>
+            <PaperProvider theme={theme}>
                 <RootNavigation />
             </PaperProvider>
         </Provider>

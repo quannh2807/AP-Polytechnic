@@ -4,7 +4,6 @@ import { AppRoute } from '../constants';
 
 import WelcomeScreen from '../screens/WelcomeScreen';
 import ParentLogin from '../screens/ParentLogin';
-import StudentLogin from '../screens/StudentLogin';
 
 const Stack = createStackNavigator();
 const AuthStack = () => {
@@ -17,10 +16,13 @@ const AuthStack = () => {
                     headerShown: false,
                 }}
             />
-            <Stack.Screen name={AppRoute.PARENT_LOGIN} children={ParentLogin} />
             <Stack.Screen
-                name={AppRoute.STUDENT_LOGIN}
-                children={StudentLogin}
+                name={AppRoute.PARENT_LOGIN}
+                children={ParentLogin}
+                options={{
+                    headerStyle: { elevation: 0 },
+                    title: '',
+                }}
             />
         </Stack.Navigator>
     );
