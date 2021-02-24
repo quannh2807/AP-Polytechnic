@@ -27,7 +27,7 @@ const App = () => {
 
     return (
         <Provider store={store}>
-            <PaperProvider theme={theme}>
+            <PaperProvider>
                 <RootNavigation />
             </PaperProvider>
         </Provider>

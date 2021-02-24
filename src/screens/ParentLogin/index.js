@@ -19,10 +19,15 @@ const ParentLogin = () => {
                     <View style={styles.textInputSection}>
                         <TextInput
                             mode="outlined"
-                            selectionColor={Colors.PRIMARY}
+                            selectionColor={Colors.GRAY_LIGHT}
                             label="Số điện thoại phụ huynh"
                             style={styles.textInput}
                             dense
+                            theme={{
+                                colors: {
+                                    primary: 'red',
+                                },
+                            }}
                         />
                     </View>
                     <View style={styles.textInputSection}>
